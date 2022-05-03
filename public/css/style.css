@@ -1,0 +1,46 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: black;
+  color: #fff;
+}
+
+body h1 {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 104, 104);
+
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+
+}
+main {
+  min-width: 80%;
+
+
+}
+
+footer {
+  height: 10%;
+  background-color: rgb(103, 103, 103);
+}
