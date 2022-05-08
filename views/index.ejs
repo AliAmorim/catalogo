@@ -11,11 +11,22 @@
     ></script>
     <title>Catalogo</title>
   </head>
-  
+
   <body>
     <%- include('./partials/header.ejs') %>
     <main>
       <div id="sub_header">Lista de Filmes</div>
+      <section id="card_container">
+        <% listFilmes.forEach(element => { %>
+          <a href="/detalhes/<%= element.id %>">
+        <article class="cards">
+          <div class="card_img">
+            <img src="<%= element.img %>" alt="<%= element.nome %> " />
+          </div>
+          <div class="card_name"><%= element.nome %></div>
+        </article>
+        <% }) %>
+      </section>
     </main>
     <%- include('./partials/footer.ejs') %>
   </body>

@@ -60,8 +60,39 @@ main div#sub_header{
   font-size: 2rem;
   justify-content: center;
 }
+section#card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 16px;
+  gap: 16px;
+}
+section article.cards {
+  height: 250px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+article.cards div.card_img{
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  border: 1px solid black;
 
 
+}
+article.cards div.card_img img {
+  height: 100%;
+
+}
+article.cards div.card_name{
+  display: flex;
+  justify-content: center;
+  height: 20%;
+
+
+}
 footer {
   height: 10%;
   background-image: linear-gradient(rgb(250, 238, 238), rgb(254, 8, 8));
