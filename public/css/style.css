@@ -9,38 +9,60 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  background-color: black;
-  color: #fff;
+  background-color: rgb(255, 252, 252);
+  color: rgb(8, 8, 8);
 }
 
 body h1 {
-  color: white;
+  color: rgb(7, 7, 7);
 }
 
 header {
   display: flex;
   justify-content: center;
-  background-color: rgb(105, 104, 104);
+  background-image: linear-gradient(red, rgb(7, 7, 7));
+  padding: 1rem;
+  position: relative;
 
 }
 header nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  font-size: 1rem;
+  color: white;
+  padding-right: 8rem;
 }
 header nav ul {
   display: flex;
   gap: 16px;
   list-style: none;
+}
 
+header h1 {
+  display: flex;
+  color: white;
+  justify-content: left;
+  font-size: 25px;
+  padding-top: 2rem;
+  position: relative;
+  
 }
 main {
   min-width: 80%;
-
-
 }
+
+main div#sub_header{
+  display: flex;
+  height: 40px;
+  background-image: linear-gradient(rgb(10, 10, 10), rgb(254, 8, 8));
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+}
+
 
 footer {
   height: 10%;
-  background-color: rgb(103, 103, 103);
+  background-image: linear-gradient(rgb(250, 238, 238), rgb(254, 8, 8));
 }
