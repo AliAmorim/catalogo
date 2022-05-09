@@ -11,9 +11,29 @@
     <%- include('./partials/header.ejs') %>
     <main>
       <div id="filme_nome"><%= filmesDetalhes.nome %></div>
-      <section id="card_container">
+      <section id="detalhes_container">
         <iframe <%= filmesDetalhes.iframe %> ></iframe>
-        <table></table>
+        <h4><%= filmesDetalhes.sinopse %></h4>
+        <table>
+          <thead>
+            <th>Detalhes</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diretor: </td>
+              <td> <%= filmesDetalhes.diretor %> </td>
+            </tr>
+            <tr>
+              <td>Duração: </td>
+              <td> <%= filmesDetalhes.duracao %> minutos </td>
+            </tr>
+            <tr>
+              <td>Ano: </td>
+              <td><%= filmesDetalhes.ano %></td>
+            </tr>
+          </tbody>
+
+        </table>
       </section>
     </main>
     <%- include('./partials/footer.ejs') %>

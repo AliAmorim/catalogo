@@ -27,3 +27,16 @@ export const getDetalhes = async (req, res) => {
     res.send(error.message)
   }
 }
+
+export const getDeletar = async (req, res) => {
+  try{
+    await filmes.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+    res.redirect('/')
+  } catch(error) {
+    res.send(error.message)
+  }
+}
