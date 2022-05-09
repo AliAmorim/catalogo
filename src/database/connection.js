@@ -10,7 +10,13 @@ export const connection = new Sequelize(
   {
     host: process.env.DB_LOCAL,
     port: 5432,
-    dialect: 'postgres'
+    dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+          require: true,
+          rejectUnauthorized: false
+      }
   }
-  
+}
+
 )

@@ -147,7 +147,7 @@ form fieldset {
 }
 
 fieldset legend {
-  background-color: #930013;
+  background-color: #febac5;
 }
 
 fieldset.fieldset__data{
@@ -166,9 +166,6 @@ form button#btn__submit {
   width: 60px;
 }
  
-
-
-
 footer {
   height: 10%;
   background-image: linear-gradient(rgb(250, 238, 238), rgb(254, 8, 8));
