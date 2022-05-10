@@ -47,7 +47,7 @@ const initTable = async () => {
   try {
       await filmes.sync()
   }
-  catch (error) {
+  catch(error){
       return error.message
   }
 }
