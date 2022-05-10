@@ -27,6 +27,7 @@ body h1 {
 
 header {
   display: flex;
+  height: 10%;
   justify-content: center;
   background-image: linear-gradient(red, rgb(7, 7, 7));
   padding: 1rem;
@@ -172,6 +173,14 @@ form button#btn__submit {
 }
  
 footer {
+  text-align: center;
   height: 10%;
   background-image: linear-gradient(rgb(250, 238, 238), rgb(254, 8, 8));
+  
+}
+footer p a {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+
 }

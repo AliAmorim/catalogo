@@ -44,7 +44,7 @@ export const getDeletar = async (req, res) => {
 }
 
 export const getCriar = (req, res) => {
-  res.render('criar.ejs')
+  res.render('criar.ejs', {toggle: false})
 }
 
 export const postCriar = async (req, res) => {
@@ -71,7 +71,7 @@ export const postCriar = async (req, res) => {
               iframe
           })
           res.render('criar.ejs', {
-            
+            toggle: true
           })
       }
   } catch (error) {

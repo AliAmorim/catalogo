@@ -56,6 +56,17 @@
             </form>
         </section>
     </main>
+    <% if (toggle) { %>
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Sucesso!',
+                text: 'Bebê criado com sucesso',
+                timer: 5000
+            })
+            setInterval(() => {window.location.href = "/"}, 5000)
+        </script>
+    <% } %>
     <%- include('./partials/footer.ejs') %>
 </body>
 
