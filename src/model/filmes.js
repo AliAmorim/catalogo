@@ -44,12 +44,15 @@ export const filmes = connection.define('filmes', {
 });
 
 const initTable = async () => {
-  await filmes.sync();
-};
+  try {
+      await filmes.sync()
+  }
+  catch(error){
+      return error.message
+  }
+}
 
-initTable();
-
-module.exports = filmes;
+initTable()
 
 
 
