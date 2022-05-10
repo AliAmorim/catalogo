@@ -12,3 +12,4 @@ export const connection = new Sequelize('postgres://admin:0Jh7ebKhbhi2Oi7NgNvu96
     },
   },
 });
+
