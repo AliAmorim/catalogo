@@ -70,7 +70,9 @@ export const postCriar = async (req, res) => {
               ano,
               iframe
           })
-          res.render('criar.ejs')
+          res.render('criar.ejs', {
+            
+          })
       }
   } catch (error) {
       res.send(error.message)

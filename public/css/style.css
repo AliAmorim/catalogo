@@ -6,6 +6,7 @@
 }
 a{
   text-decoration: none;
+  color: white;
 }
 header nav a {
   text-decoration: none;
@@ -16,7 +17,7 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  background-color: rgb(255, 252, 252);
+  background-image: linear-gradient(red, rgb(179, 174, 174));
   color: rgb(8, 8, 8);
 }
 
@@ -76,27 +77,30 @@ section#card_container {
   gap: 16px;
 }
 section article.cards {
-  height: 250px;
+  height: 330px;
   width: 200px;
   border: 1px solid black;
+  box-shadow: 3px 3px rgb(9, 9, 8), -1em 0 0.4em rgb(126, 37, 76);
 }
 
 article.cards div.card_img{
   display: flex;
   justify-content: center;
-  height: 80%;
-  border: 1px solid black;
+  width: 100%;
+  
 
 
 }
 article.cards div.card_img img {
-  height: 100%;
+  width: 100%;
 
 }
 article.cards div.card_name{
   display: flex;
   justify-content: center;
   height: 20%;
+  color: black;
+  font-weight: bold;
 }
 
 main div#filme_nome{
@@ -112,7 +116,7 @@ section#detalhes_container {
   flex-wrap: wrap;
   align-items: center;
   margin-top: 16px;
-  padding: 16px;
+  padding: 10px;
   gap: 16px;
 }
 section#detalhes_container h4{
@@ -121,7 +125,8 @@ section#detalhes_container h4{
 div.btn_container {
   display: flex;
   flex-direction: column;
-  gap: 11px
+  gap: 11px;
+  padding: 0.2rem
 }
 
 table {
