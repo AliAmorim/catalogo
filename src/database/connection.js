@@ -1,7 +1,4 @@
-import  Sequelize  from 'sequelize'
-import dotenv from 'dotenv'
-
-dotenv.config()
+const Sequelize = require("sequelize")
 
 export const connection = new Sequelize(process.env.DATABASE_URL, {
   dialect: "postgres",
